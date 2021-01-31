@@ -3,7 +3,9 @@ export default function Items({name, price, image}) {
     <div id="" className="contents__container">
       <img src={"./images/" + image} alt="Momos"/>
       <h2>{name}</h2>
-      <p>₹{price} per person</p>
+      <span>₹{price} per person</span>
+      <span className="dot"> &middot; </span>
+      <span>45 min</span>
     </div>
   );
 }
