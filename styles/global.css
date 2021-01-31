@@ -110,7 +110,7 @@ a {
 
 .contents__container {
 	width: 100%;
-	height: 340px;
+	height: 250px;
 	padding: 10px;
 	border-radius: 20px;
 	background-color: #fff9f1;
@@ -120,7 +120,7 @@ a {
 
 .contents__container > img {
 	width: 100%;
-	height: 250px;
+	height: 160px;
 	object-fit: cover;
 	border-radius: 15px;
 	margin-bottom: 10px;
