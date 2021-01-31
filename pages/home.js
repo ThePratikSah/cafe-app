@@ -13,8 +13,38 @@ export default function HomePage({ data }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch('https://themidtowncafe.com/api/hello');
-  const data = await res.json();
+  const data = {
+    "menu": [
+      {
+        "momos": [
+          {
+            "name": "Veg Momos",
+            "price": 40,
+            "image": "momos.jpg"
+          },
+          {
+            "name": "Non-Veg Momos",
+            "price": 50,
+            "image": "momos.jpg"
+          }
+        ]
+      },
+      {
+        "rolls": [
+          {
+            "name": "Veg Roll",
+            "price": 30,
+            "image": "rolls.jpg"
+          },
+          {
+            "name": "Egg Roll",
+            "price": 40,
+            "image": "rolls.jpg"
+          }
+        ]
+      }
+    ]
+  }
   return {
     props: {
       data
